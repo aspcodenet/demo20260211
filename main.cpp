@@ -1,6 +1,12 @@
 #include <iostream> // headerfile
+#include "somefunc.h" // header file for function declarations
 
- 
+
+
+// declaration of functions
+void printHelloWorld(); // function prototype for printing "Hello, World!"
+std::string getSomeonesName(); // function prototype for getting someone's name
+
 
 int main(){
     printHelloWorld(); // call the function
@@ -8,7 +14,7 @@ int main(){
     std::cout << "The sum of 5 and 10 is: " << tal << std::endl; // output the result
 
     std::string coolName = getSomeonesName(); // call the function to get a cool name and store it in 'coolName'
-    return 0;
+    return 0; // error code 0 indicates that the program ended successfully
 }
 
 std::string getSomeonesName() { // function definition
@@ -18,11 +24,8 @@ std::string getSomeonesName() { // function definition
     return name; // return the name
 }
 
-int add(int a, int b) { // function definition
-    return a + b; // return the sum of a and b
-}
-
 void printHelloWorld() { // function definition
     std::cout << "Hello World!" << std::endl; // output
 }
+
 
